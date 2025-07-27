@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem para o meu amorzinho</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* Fundo gradiente roxo e preto */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #2c003e, #000000);
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #6a0dad;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #8b27db;
+        }
+
+        .mensagem {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            display: none;
+            font-family: "Comic Sans MS", cursive, sans-serif; /* tom fofo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mensagem para o meu amorzinho</h1>
+        <button onclick="mostrarMensagem()">Aperte aqui</button>
+        <p class="mensagem" id="mensagem">
+            Queria muito estar com você agora para te dizer que vai ficar tudo bem, te abraçar e te dar uns beijinhos. 
+            Você é uma mulher incrível e muito forte, amo conversar com você sobre qualquer coisa (principalmente sobre Demon Slayer). 
+            Tu és dona do sorriso mais lindo que eu já vi. Obrigado por conversar comigo sempre!
+        </p>
+    </div>
+
+    <script>
+        function mostrarMensagem() {
+            const msg = document.getElementById("mensagem");
+            msg.style.display = "block";
+        }
+    </script>
+</body>
+</html>
